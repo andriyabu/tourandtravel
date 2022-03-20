@@ -16,10 +16,23 @@ html{
     font-size: 62.5%;
 }
 
-body{
-    background: #333;
-    height: auto;
+.heading{
+    color: #333;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    letter-spacing: .2rem;
 }
+
+.heading span{
+    color: var(--blue-ocean);
+}
+
+/* body{
+    background: #333;
+    height: 1024px;
+} */
 
 header{
 width: 96%;
@@ -176,10 +189,90 @@ header .fa-bars{
     background: none;
 }
 
+.feature{
+    height: 100vh;
+    background:#f9f9f9;
+}
 
+.feature .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.feature .card-container .card{
+    width: 30rem;
+    margin: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+}
 
+.feature .card-container .card img{
+    height: 25rem;
+    widows: 100%;
+    object-fit: cover;
+}
 
+.feature .card-container .content{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.feature .card-container .content .title{
+    color: var(--blue-ocean);
+    font-size: 3rem;
+}
+
+.feature .card-container .content p{
+    color: #333;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.feature .card-container .content .stars i{
+    padding: 0 .2rem;
+    font-size: 2rem;
+    color: gold;
+}
+
+.feature .card-container .content .btn{
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    background: var(--blue-ocean);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.feature .card-container .content .btn:hover{
+    background: none;
+    border: 2rem solid var(--blue-ocean);
+    color: var(--blue-ocean);
+}
+
+.feature .card-container .card .discount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    height: 3.5rem;
+    width: 6rem;
+    background: #ff3300;
+    color: #fff;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
 
 
 
