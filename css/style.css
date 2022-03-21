@@ -381,9 +381,65 @@ header .fa-bars{
 }
 
 
+.review{
+    background: url(../images/review.jpg), linear-gradient(var(--blue-ocean),var(--blue-ocean)) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
 
+.review .heading{
+    color: #fff;
+    padding-bottom: 4rem;
+}
 
+.review .heading span{
+    color: gold;
+}
 
+.review .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review .box-container .box{
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 .3rem .5rem #000;
+    background: #fff;
+}
+
+.review .box-container .box .image{
+    margin-top: -5rem;
+}
+
+.review .box-container .box .image img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: .7rem solid #fff;
+}
+
+.review .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--blue-ocean);
+}
+
+.review .box-container .box .content p{
+    font-size: 1.4rem;
+    color: #333;
+    padding: .5rem 1.5rem;
+}
+
+.review .box-container .box .content .stars i{
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
 
 
 
