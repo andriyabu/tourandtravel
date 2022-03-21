@@ -476,7 +476,8 @@ header .fa-bars{
 }
 
 
-.contact .row .contact-form-container form input, textarea{
+.contact .row .contact-form-container form input,
+.contact .row .contact-form-container form textarea{
     outline: none;
     border: .2rem solid var(--blue-ocean);
     height: 4rem;
@@ -484,7 +485,7 @@ header .fa-bars{
     padding: 0 1rem;
     margin: 1rem 0;
     font-size: 1.8rem;
-    width: 49%;
+    width: 46%;
     /* border-radius: 1rem; */
 }
 
@@ -630,26 +631,19 @@ header .fa-bars{
     }
 
     .home .form-container form{
-        /* width: 100%; */
+        width: 100%;
         margin: 3rem 0;
     }
 
     .home .form-container form input[type="submit"]{
         width: 100%;
     }
-
-    .contact .row .contact-form-container form input{
-        margin: 1rem 0;
-        width: 100%;
+    .contact .row .contact-form-container form{
+        padding: 1rem;
     }
-
+    .contact .row .contact-form-container form .inputBox input,
     .contact .row .contact-form-container form input[type="submit"]{
-        margin: 1rem 0;
         width: 100%;
-    }
-
-    .contact .row .contact-form-container form input[type="submit"]:hover{
-        color: #fff;
-        background: var(--blue-ocean);
+        margin: 1rem 0;
     }
 }
