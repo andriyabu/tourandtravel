@@ -510,6 +510,73 @@ header .fa-bars{
 }
 
 
+.newsletter{
+    padding: 2rem;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/review.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.newsletter h1{
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+}
+
+.newsletter p{
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 15rem;
+}
+
+.newsletter form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter form input{
+    outline: none;
+    border: none;
+    height: 5rem;
+}
+
+.newsletter form input[type="email"]{
+    width: 40rem;
+    padding: 0 1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, .2);
+    font-size: 2rem;
+}
+
+.newsletter form input[type="email"]::placeholder{
+    color: #ccc;
+}
+
+.newsletter form input[type="submit"]{
+    width: 20rem;
+    color: #fff;
+    background: var(--blue-ocean);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    margin-left: 1.3rem;
+}
+
+.newsletter form input[type="submit"]:hover{
+    color: #fff;
+    border: .2rem solid #fff;
+    background: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -622,6 +689,15 @@ header .fa-bars{
     .contact .row .contact-form-container{
         width: 90%;
         margin: 0 auto;
+    }
+
+    .newsletter p{
+        padding: 1rem 0;
+    }
+
+    .newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
 
