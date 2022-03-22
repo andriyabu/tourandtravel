@@ -512,7 +512,7 @@ header .fa-bars{
 
 .newsletter{
     padding: 2rem;
-    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/review.jpg) no-repeat;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/newsletter.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -535,6 +535,7 @@ header .fa-bars{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 
 .newsletter form input{
@@ -562,7 +563,7 @@ header .fa-bars{
     font-size: 2rem;
     cursor: pointer;
     transition: .2s;
-    margin-left: 1.3rem;
+    /* margin-left: 1.3rem; */
 }
 
 .newsletter form input[type="submit"]:hover{
@@ -571,8 +572,40 @@ header .fa-bars{
     background: none;
 }
 
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #222;
+}
 
+.footer .credit{
+    font-size: 2rem;
+    color: #eee;
+}
 
+.footer .credit span{
+    color: var(--blue-ocean);
+}
+
+.footer .icons a{
+    font-size: 2rem;
+    margin: 0 .5rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    border: .2rem solid #fff;
+    transition: .2s linear;
+}
+
+.footer .icons a:hover{
+    background: var(--blue-ocean);
+}
 
 
 
@@ -698,6 +731,11 @@ header .fa-bars{
     .newsletter form input[type="email"]{
         width: 100%;
         margin-bottom: 1rem;
+    }
+
+    .footer{
+        flex-flow: column;
+        text-align: center;
     }
 }
 
